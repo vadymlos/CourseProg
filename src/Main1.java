@@ -1,7 +1,11 @@
 public class Main1 {
     public static void main(String[] args) {
-        System.out.println("yoohoo55545454545");
-        System.out.println("yoohooSecond");
-        System.out.println("yoohooThird check");
+        Cat Bob = new Cat("black", 1, 2);
+        Cat Jay = new Cat("red", 5, 4);
+
+        System.out.println("First cat" + Bob);
+        System.out.println("Second Cat" + Jay);
+        Bob.getVoice();
+
     }
 }
