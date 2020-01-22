@@ -1,6 +1,14 @@
- public class Cat {
+package Lesson1;
+
+public class Cat {
         private String color;
         private int year;
+
+     public int getAge() {
+         return age;
+     }
+
+     private int age;
         private double weight;
 
         public Cat(String color, int year, double weight) {
@@ -38,8 +46,7 @@
         }
 
         @Override
-        public String toString() {
-            return "[color=" + color + ", year=" + year + ", weight=" + weight + "]";
+        public String toString() { return "[color=" + color + ", year=" + year + ", weight=" + weight + "]";
         }
 
     }

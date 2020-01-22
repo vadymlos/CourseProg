@@ -1,3 +1,5 @@
+package HW1;
+
 public class Trian {
     private int one;
     private int two;
@@ -37,7 +39,7 @@ public class Trian {
 
     @Override
     public String toString () {
-        return "Trian [one = " + one + ", second = " + two + ", three = " + three + "]";
+        return "HW1.Trian [one = " + one + ", second = " + two + ", three = " + three + "]";
     }
 
 }

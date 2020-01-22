@@ -1,3 +1,5 @@
+package HW1;
+
 public class MainTrian {
     public static void main(String[] args) {
         Trian first = new Trian(3,5,4);
