@@ -5,12 +5,17 @@ public class Group {
     public  int count = 0;
 
     public void addGr(Student student) {
-        try {
-            gr[count] = student;
-            count++;
-        }catch (Exception e){
-            System.out.println("Array error");
-        }
+            if(count >= 10) {
+                try {
+                    throw new NegativeCountExeption(10);
+                }catch (NegativeCountExeption e){
+                    System.out.println(student.getName() + ": Can`t be add cause group is already full");
+                }
+
+            }else {
+                gr[count] = student;
+                count++;
+            }
     }
 
     public void removeFromGroup(Student student) {
@@ -37,7 +42,19 @@ public class Group {
             }
 
         }
+
+
     }
 
 
+    public void viewAllStudentsNames(){
+        for (int i = 0; i < this.gr.length; i++) {
+            try {
+                System.out.println(this.gr[i].getName());
+            }catch (NullPointerException e){
+                System.out.println("Student was removed from group");
+            }
+
+        }
+    }
 }
